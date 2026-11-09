@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "npm run dev --prefix client",
     "build": "npm run build --prefix client",
+    "build:render": "npm ci --prefix client --include=dev && npm run build --prefix client",
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc -p shared --noEmit && tsc -p client --noEmit",
