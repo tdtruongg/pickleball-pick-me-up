@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #9fd8ef;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+}
+
+#app,
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hud {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+}
+
+.hud-help {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  font-size: 13px;
+  line-height: 1.55;
+  background: rgba(0, 0, 0, 0.28);
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+.hud-help b {
+  color: #ffe066;
+}
+
+.hud-stats {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  text-align: right;
+  font-size: 13px;
+}
+
+.hud-rally {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.hud-flash {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  opacity: 0;
+  transition:
+    opacity 0.15s,
+    transform 0.15s;
+}
+
+.hud-flash.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.hud-flash.perfect {
+  color: #ffe066;
+}
+
+.hud-power {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  width: 220px;
+  height: 12px;
+  margin-left: -110px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.hud-power.show {
+  opacity: 1;
+}
+
+.hud-power-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #7bed9f, #ffe066, #ff6b6b);
+}
