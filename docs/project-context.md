@@ -13,7 +13,7 @@ Senior game developer kiêm kỹ sư multiplayer networking, giỏi Three.js và
 - Cảm giác: điều khiển mượt, đánh bóng "đã tay", âm thanh "pop" khi chạm vợt.
 
 ## 3. Tech stack
-- Client: TypeScript + Three.js, Vite. Deploy Vercel/Netlify.
+- Client: TypeScript + Three.js, Vite. Deploy Render Static Site (Vercel bị khóa tài khoản → chuyển sang Render, gom client + server về một nơi).
 - Server: Node.js + TypeScript + Colyseus. Deploy Render free tier, Singapore.
 - Không database. Trạng thái chỉ trong phòng; phòng tự xóa khi hết người.
 - Vật lý bóng tự viết, đơn giản, deterministic, trong `shared/`.
@@ -77,6 +77,6 @@ Senior game developer kiêm kỹ sư multiplayer networking, giỏi Three.js và
 - [ ] GĐ5 – 2v2, reconnect, màn hình "đánh thức server".
 - [ ] GĐ6 – Điều khiển cảm ứng.
 - [ ] GĐ7 – Nhân vật GLB + hoạt ảnh, âm thanh, hiệu ứng, polish.
-- [ ] GĐ8 – Deploy client Vercel, server Render, test với bạn bè.
+- [ ] GĐ8 – Deploy client + server trên Render, test với bạn bè.
 
 Trạng thái hiện tại: GĐ1 xong, chờ playtest thủ công trước khi sang GĐ2.
